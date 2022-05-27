@@ -11,11 +11,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val displayPlayedNumber = findViewById<TextView> (R.id.display_number)
+        //val displayPlayedNumber = findViewById<TextView> (R.id.display_number)
         val playButton = findViewById<Button> (R.id.play_button)
         playButton.setOnClickListener {
             val dice = Dice(6)
-            displayPlayedNumber.text = dice.randomNumber.toString()
+            //displayPlayedNumber.text = dice.randomNumber.toString()
         }
     }
 }

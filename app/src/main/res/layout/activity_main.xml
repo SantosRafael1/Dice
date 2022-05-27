@@ -6,6 +6,20 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/dice_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/dice_image_description"
+        android:src="@drawable/dice1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.520"
+        />
+
+    <!--
     <TextView
         android:id="@+id/display_number"
         android:layout_width="wrap_content"
@@ -18,7 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.545"
-        tools:text="1" />
+        tools:text="1" /> -->
 
     <Button
         android:id="@+id/play_button"
@@ -26,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/button_play_text"
-        app:layout_constraintTop_toBottomOf="@id/display_number"
+        app:layout_constraintTop_toBottomOf="@id/dice_image"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
